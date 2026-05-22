@@ -1,0 +1,1061 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>114年 臺北市都審指南 ｜ 建築師事務所 / 建設公司參考</title>
+<style>
+:root{
+  --navy:#0B2545;--navy2:#1B3A63;--navy3:#E9EFF8;
+  --blue:#2563EB;--blue2:#DBEAFE;--blue3:#1D4ED8;
+  --amber:#B45309;--amber2:#FEF3C7;
+  --green:#15803D;--green2:#DCFCE7;
+  --red:#B91C1C;--red2:#FEE2E2;
+  --gray1:#F8F9FA;--gray2:#E9ECEF;--gray3:#CED4DA;--gray4:#6C757D;--gray5:#343A40;
+  --text:#1A1A2E;--border:#DEE2E6;--white:#fff;
+  --sidebar:240px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Noto Sans TC','Microsoft JhengHei','PingFang TC',sans-serif;font-size:14px;color:var(--text);background:var(--gray1);line-height:1.65}
+
+/* TOP BAR */
+.topbar{position:fixed;top:0;left:0;right:0;height:52px;background:var(--navy);display:flex;align-items:center;padding:0 20px;gap:12px;z-index:200;box-shadow:0 2px 8px rgba(0,0,0,.3)}
+.topbar-logo{background:var(--blue);color:#fff;font-weight:800;font-size:13px;padding:4px 10px;border-radius:4px;letter-spacing:.5px;white-space:nowrap}
+.topbar-title{color:#fff;font-weight:700;font-size:15px}
+.topbar-sub{color:rgba(255,255,255,.5);font-size:12px;margin-left:auto}
+.topbar-tag{background:#D97706;color:#fff;font-size:11px;font-weight:700;padding:3px 8px;border-radius:20px}
+
+/* SIDEBAR */
+.sidebar{position:fixed;top:52px;left:0;bottom:0;width:var(--sidebar);background:var(--navy2);overflow-y:auto;z-index:100}
+.sb-section{padding:12px 0 4px}
+.sb-label{font-size:10px;font-weight:700;letter-spacing:1.8px;color:rgba(255,255,255,.35);padding:0 16px 6px;text-transform:uppercase}
+.sb-link{display:flex;align-items:center;gap:8px;padding:8px 16px;color:rgba(255,255,255,.75);font-size:13px;cursor:pointer;transition:background .12s,color .12s;text-decoration:none}
+.sb-link:hover,.sb-link.active{background:rgba(255,255,255,.12);color:#fff}
+.sb-link .ic{font-size:15px;width:20px;text-align:center;opacity:.7}
+.sb-link.active .ic{opacity:1}
+
+/* MAIN */
+.main{margin-left:var(--sidebar);margin-top:52px;padding:24px;max-width:960px}
+.sec{display:none;animation:fi .18s ease}
+.sec.on{display:block}
+@keyframes fi{from{opacity:0;transform:translateY(5px)}to{opacity:1;transform:translateY(0)}}
+
+/* SECTION HEADER */
+.sec-hdr{border-left:4px solid var(--blue);padding:0 0 0 14px;margin-bottom:20px}
+.sec-hdr h2{font-size:20px;font-weight:800;color:var(--navy)}
+.sec-hdr p{font-size:12.5px;color:var(--gray4);margin-top:3px}
+
+/* CARD */
+.card{background:var(--white);border:1px solid var(--border);border-radius:10px;padding:18px 20px;margin-bottom:16px}
+.card-ttl{font-size:14px;font-weight:700;color:var(--navy);margin-bottom:12px;display:flex;align-items:center;gap:8px}
+.card-ttl .ct{background:var(--blue2);color:var(--blue3);font-size:12px;font-weight:800;padding:3px 9px;border-radius:5px;white-space:nowrap}
+
+/* GRID */
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.g3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.g4{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+
+/* BADGES */
+.b{display:inline-block;font-size:11px;font-weight:700;padding:2px 8px;border-radius:20px;margin-right:3px}
+.b-r{background:var(--red2);color:var(--red)}
+.b-a{background:var(--amber2);color:var(--amber)}
+.b-g{background:var(--green2);color:var(--green)}
+.b-b{background:var(--blue2);color:var(--blue3)}
+.b-gray{background:var(--gray2);color:var(--gray5)}
+.b-new{background:#FEF9C3;color:#854D0E;border:1px solid #FDE047}
+
+/* ALERTS */
+.al{border-radius:7px;padding:11px 14px;margin-bottom:14px;font-size:13px;border-left:4px solid;line-height:1.6}
+.al-b{background:var(--blue2);border-color:var(--blue);color:#1E3A5F}
+.al-a{background:var(--amber2);border-color:var(--amber);color:#5C3B00}
+.al-g{background:var(--green2);border-color:var(--green);color:#14532D}
+.al-r{background:var(--red2);border-color:var(--red);color:#7F1D1D}
+.al strong{font-weight:700}
+
+/* TABLE */
+table{width:100%;border-collapse:collapse;font-size:13px}
+th{background:var(--navy);color:#fff;padding:8px 11px;text-align:left;font-weight:700;font-size:12.5px}
+td{padding:8px 11px;border-bottom:1px solid var(--gray2);vertical-align:top}
+tr:last-child td{border-bottom:none}
+tr:nth-child(even) td{background:var(--gray1)}
+tr:hover td{background:var(--navy3)}
+
+/* STAT */
+.stat{background:var(--white);border:1px solid var(--border);border-radius:9px;padding:14px 12px;text-align:center}
+.stat-n{font-size:26px;font-weight:800;color:var(--blue);line-height:1.1}
+.stat-l{font-size:11.5px;color:var(--gray4);margin-top:4px}
+.stat-u{font-size:12px;font-weight:600;color:var(--navy);margin-top:2px}
+
+/* FLOW */
+.flow{display:flex;align-items:stretch;flex-wrap:wrap;gap:0;margin:14px 0}
+.fstep{flex:1;min-width:90px;background:var(--blue2);border:1.5px solid var(--blue);border-left:none;padding:10px 8px;text-align:center;position:relative;font-size:12px;color:var(--navy2)}
+.fstep:first-child{border-left:1.5px solid var(--blue);border-radius:7px 0 0 7px}
+.fstep:last-child{border-radius:0 7px 7px 0}
+.fstep:not(:last-child)::after{content:'';position:absolute;right:-10px;top:50%;transform:translateY(-50%);border:8px solid transparent;border-left-color:var(--blue);z-index:1}
+.fstep .fn{font-size:17px;font-weight:800;color:var(--blue3);display:block;line-height:1;margin-bottom:4px}
+.fstep.hi{background:#DBEAFE;border-color:#1D4ED8}
+.fstep.warn{background:#FEF3C7;border-color:#B45309;color:#5C3B00}
+.fstep.warn::after{border-left-color:#B45309}
+.fstep.done{background:var(--green2);border-color:var(--green);color:#14532D}
+.fstep.done::after{border-left-color:var(--green)}
+
+/* VISUAL BOXES */
+.vbox{background:var(--gray1);border:1.5px solid var(--border);border-radius:8px;padding:14px;text-align:center}
+.vbox .big{font-size:32px;margin-bottom:6px}
+.vbox h4{font-size:13px;font-weight:700;color:var(--navy);margin-bottom:4px}
+.vbox p{font-size:12px;color:var(--gray4);line-height:1.5}
+
+/* PROCEDURE DIAGRAM */
+.proc-diag{display:flex;flex-direction:column;gap:8px;margin:12px 0}
+.proc-row{display:flex;align-items:center;gap:8px}
+.proc-box{background:var(--blue2);border:1.5px solid var(--blue);border-radius:7px;padding:8px 14px;font-size:13px;font-weight:600;color:var(--navy2);min-width:130px;text-align:center}
+.proc-box.gray{background:var(--gray2);border-color:var(--gray3);color:var(--gray5)}
+.proc-box.amber{background:var(--amber2);border-color:var(--amber);color:var(--amber)}
+.proc-box.green{background:var(--green2);border-color:var(--green);color:var(--green)}
+.proc-box.red{background:var(--red2);border-color:var(--red);color:var(--red)}
+.proc-arr{font-size:18px;color:var(--gray3);font-weight:700}
+.proc-note{font-size:11.5px;color:var(--gray4);background:var(--gray1);border:1px dashed var(--gray3);border-radius:5px;padding:4px 10px}
+
+/* DESIGN ICONS ROW */
+.dicons{display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:10px;margin:10px 0}
+.dicon{background:var(--gray1);border:1px solid var(--border);border-radius:8px;padding:12px 10px;text-align:center}
+.dicon .di{font-size:24px;margin-bottom:5px}
+.dicon h5{font-size:12px;font-weight:700;color:var(--navy);margin-bottom:3px}
+.dicon p{font-size:11px;color:var(--gray4);line-height:1.4}
+
+ul,ol{padding-left:1.3em}
+li{margin-bottom:4px;font-size:13px;line-height:1.6}
+p{font-size:13px;margin-bottom:8px;line-height:1.65}
+h3{font-size:14.5px;font-weight:700;color:var(--navy);margin:14px 0 7px}
+h4{font-size:13.5px;font-weight:700;color:var(--navy2);margin:10px 0 5px}
+a{color:var(--blue);text-decoration:none}a:hover{text-decoration:underline}
+
+@media(max-width:700px){
+  .sidebar{width:200px}.main{margin-left:200px;padding:14px}
+  .g2,.g3,.g4{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <span class="topbar-logo">都審</span>
+  <span class="topbar-title">臺北市都市設計審議指南</span>
+  <span class="topbar-tag">114年版</span>
+  <span class="topbar-sub">供建築師事務所 ／ 建設公司參考</span>
+</header>
+
+<nav class="sidebar">
+  <div class="sb-section">
+    <div class="sb-label">入門</div>
+    <a class="sb-link active" onclick="go('home')"><span class="ic">🏙</span>都審是什麼？</a>
+    <a class="sb-link" onclick="go('scope')"><span class="ic">📋</span>送審資格</a>
+  </div>
+  <div class="sb-section">
+    <div class="sb-label">申請</div>
+    <a class="sb-link" onclick="go('flow')"><span class="ic">🔄</span>申請流程</a>
+    <a class="sb-link" onclick="go('fee')"><span class="ic">💰</span>費用與時程</a>
+    <a class="sb-link" onclick="go('change')"><span class="ic">✏️</span>變更設計</a>
+  </div>
+  <div class="sb-section">
+    <div class="sb-label">規範</div>
+    <a class="sb-link" onclick="go('must')"><span class="ic">⚠️</span>必遵守規範</a>
+    <a class="sb-link" onclick="go('ref')"><span class="ic">📐</span>設計參考原則</a>
+  </div>
+  <div class="sb-section">
+    <div class="sb-label">資訊</div>
+    <a class="sb-link" onclick="go('committee')"><span class="ic">👥</span>委員會簡介</a>
+    <a class="sb-link" onclick="go('greenlaw')"><span class="ic">🌿</span>綠化實施規則</a>
+    <a class="sb-link" onclick="go('links')"><span class="ic">🔗</span>常用網站</a>
+  </div>
+</nav>
+
+<main class="main">
+
+<!-- ===== HOME ===== -->
+<section id="home" class="sec on">
+  <div class="sec-hdr">
+    <h2>🏙 臺北市都市設計審議（都審）是什麼？</h2>
+    <p>申請建照前，建築計畫須通過都市設計審議，取得核定函後方可申請建造執照</p>
+  </div>
+
+  <div class="card">
+    <div class="card-ttl"><span class="ct">都審核心目的</span>為什麼要做都審？</div>
+    <div class="g3">
+      <div class="vbox"><div class="big">🌳</div><h4>公共開放空間品質</h4><p>開放空間系統配置、綠化保水、步行環境串連</p></div>
+      <div class="vbox"><div class="big">🏗</div><h4>建築量體與風貌</h4><p>高度、造型、色彩、立面語彙、景觀計畫</p></div>
+      <div class="vbox"><div class="big">🚗</div><h4>交通動線整合</h4><p>停車空間配置、車道出入口位置、人行安全</p></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-ttl"><span class="ct">法源依據</span>都審審什麼？（都計定通§9第2項）</div>
+    <div class="g2">
+      <ul>
+        <li>🟢 公共開放空間系統配置及其<strong>綠化、保水</strong>事項</li>
+        <li>🟢 人行空間、步道或<strong>自行車道</strong>系統動線配置</li>
+        <li>🟢 交通運輸系統、<strong>停車空間及出入動線</strong>配置</li>
+        <li>🟢 建築基地細分規模及<strong>地下室開挖</strong>之限制</li>
+      </ul>
+      <ul>
+        <li>🟡 建築<strong>量體配置、高度、造型、色彩、風格</strong></li>
+        <li>🟡 綠建材及<strong>水資源回收再利用</strong>之事項</li>
+        <li>🟡 環境保護設施及資源再利用設施配置</li>
+        <li>🟡 <strong>景觀計畫</strong></li>
+        <li>🟡 防災、救災空間及設施配置 ／ 管理維護計畫</li>
+      </ul>
+    </div>
+    <div class="al al-b" style="margin-top:10px;margin-bottom:0">
+      <strong>法源：</strong>臺北市土地使用分區管制自治條例§95 授權訂定「審議規則」、「收費辦法」及各相關都市設計準則
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-ttl"><span class="ct">程序選擇</span>四種審議層級一眼看懂</div>
+    <table>
+      <thead><tr><th>層級</th><th>程序名稱</th><th>非公有土地（樓地板面積）</th><th>費用</th><th>審議單位</th></tr></thead>
+      <tbody>
+        <tr><td>最高</td><td><span class="b b-r">一般審議</span></td><td>≥ 10,000㎡ 且基地 ≥ 5,000㎡</td><td><strong>$85,000</strong></td><td>幹事會初審 → 委員會</td></tr>
+        <tr><td></td><td><span class="b b-a">專案審議</span></td><td>≥ 10,000㎡（其他類型）</td><td><strong>$80,000</strong></td><td>幹事會初審 → 專案委員會</td></tr>
+        <tr><td></td><td><span class="b b-g">簡化審議</span></td><td>3,000㎡ ≤ 樓地板 ＜ 10,000㎡</td><td><strong>$45,000</strong></td><td>簡化委員會</td></tr>
+        <tr><td>最低</td><td><span class="b b-gray">幹事會審議</span></td><td>＜ 3,000㎡</td><td><strong>$35,000</strong></td><td>幹事會逕行審議</td></tr>
+      </tbody>
+    </table>
+    <p style="margin-top:8px;font-size:12px;color:var(--gray4)">*公有土地、學校、社宅等公有案件，依樓地板面積另有不同對應程序，詳見「送審資格」頁。山坡地（基地≥2,000㎡）→ 專案；大稻埕地區 → 專案。</p>
+  </div>
+</section>
+
+<!-- ===== SCOPE ===== -->
+<section id="scope" class="sec">
+  <div class="sec-hdr">
+    <h2>📋 送審資格（哪些案件要送都審？）</h2>
+    <p>符合下列任一條件，即須辦理都市設計審議後方可申請建造執照</p>
+  </div>
+
+  <div class="al al-b">
+    <strong>兩大送審來源：</strong>① 位於都市計畫書載明之<strong>都審地區</strong>（可至都市開發審議地圖查詢），或 ② 符合審議規則§3 所列大規模建築物條件（全市適用）
+  </div>
+
+  <div class="card">
+    <div class="card-ttl"><span class="ct">審議規則§3</span>大規模建築物定義（13款，符合任一即須送審）</div>
+    <table>
+      <thead><tr><th style="width:5%">款</th><th>適用條件</th><th style="width:18%">對應程序</th></tr></thead>
+      <tbody>
+        <tr><td>一</td><td>基地面積達 <strong>6,000㎡</strong>，且總樓地板面積達 <strong>30,000㎡</strong></td><td><span class="b b-r">一般審議</span></td></tr>
+        <tr><td>二</td><td>依建築法§98 許可之<strong>特種建築物</strong>（捷運工程、軍事除外）</td><td></td></tr>
+        <tr><td>三</td><td>基地面積達 <strong>10,000㎡</strong> 之公共設施用地廣場或公園整體規劃案</td><td><span class="b b-r">一般審議</span></td></tr>
+        <tr><td>四</td><td>基地面積達 <strong>6,000㎡</strong> 之立體停車場（建築物附屬除外）</td><td></td></tr>
+        <tr><td>五</td><td>基地面積達 <strong>6,000㎡</strong> 適用都市計畫公共設施用地多目標使用辦法</td><td></td></tr>
+        <tr><td>六</td><td><strong>人行陸橋</strong>或跨越淡水河、基隆河、新店溪或景美溪之<strong>橋梁</strong></td><td><span class="b b-r">一般審議</span></td></tr>
+        <tr><td>七</td><td>公有土地適用促參法、捷運土地開發辦法或設定地上權，且總樓地板面積達 <strong>30,000㎡</strong></td><td></td></tr>
+        <tr><td>八</td><td>樓地板面積達 <strong>15,000㎡</strong> 之公有建築物、各級學校（含幼兒園）或政府新建<strong>社會住宅</strong></td><td><span class="b b-r">一般審議</span></td></tr>
+        <tr><td>九</td><td>第八款建築物基地新增樓地板面積達 <strong>5,000㎡</strong></td><td></td></tr>
+        <tr><td>十</td><td><strong>高架捷運車站</strong>或地面層捷運出入口</td><td><span class="b b-r">一般審議</span></td></tr>
+        <tr><td>十一</td><td>適用臺北市都市計畫劃定<strong>山坡地</strong>開發建築管制規定（特定情形免送）</td><td><span class="b b-a">專案審議</span></td></tr>
+        <tr><td>十二</td><td>容積移轉移入量達接受基地原基準容積 <strong>30%</strong></td><td></td></tr>
+        <tr><td>十三</td><td>其他經本府認定有重大妨礙公共安全、景觀或文化資產保存之虞者</td><td></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="g2">
+    <div class="card">
+      <div class="card-ttl"><span class="ct">其他法令</span>還有哪些案件需送都審？</div>
+      <ul>
+        <li>公共設施<strong>容積移入</strong>申請案（容移自治條例§5）</li>
+        <li><strong>徒步區</strong>設計申請案</li>
+        <li>臺北市建築空地維護管理辦法（臺北好好看系列二）</li>
+        <li>臺北市建築基地<strong>開發許可回饋辦法</strong></li>
+        <li>依法令規定須審議之<strong>廣告物</strong>申請案</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="card-ttl"><span class="ct">審議程序分類</span>公有 vs 非公有案件對照</div>
+      <table style="font-size:12px">
+        <thead><tr><th>程序</th><th>非公有</th><th>公有／學校／社宅</th></tr></thead>
+        <tbody>
+          <tr><td><span class="b b-r">一般</span></td><td>基地≥5,000㎡</td><td>樓地板≥10,000㎡</td></tr>
+          <tr><td><span class="b b-a">專案</span></td><td>樓地板≥10,000㎡</td><td>3,000㎡≤樓地板&lt;10,000㎡</td></tr>
+          <tr><td><span class="b b-g">簡化</span></td><td>3,000㎡≤樓地板&lt;10,000㎡</td><td>樓地板&lt;3,000㎡</td></tr>
+          <tr><td><span class="b b-gray">幹事會</span></td><td>樓地板&lt;3,000㎡</td><td>—</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FLOW ===== -->
+<section id="flow" class="sec">
+  <div class="sec-hdr">
+    <h2>🔄 申請流程（以一般／專案審議為例）</h2>
+    <p>從線上申請到取得核定函、申請建照的完整流程</p>
+  </div>
+
+  <div class="card">
+    <div class="card-ttl"><span class="ct">全程流程</span>都審申請九步驟</div>
+    <!-- STEP FLOW SVG-style using HTML -->
+    <div style="overflow-x:auto">
+    <div style="display:flex;flex-direction:column;gap:0;min-width:620px">
+
+      <!-- Step 1 -->
+      <div style="display:flex;align-items:center;gap:10px;margin-bottom:4px">
+        <div style="width:32px;height:32px;background:var(--blue);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:14px;flex-shrink:0">1</div>
+        <div style="flex:1;background:var(--navy3);border:1.5px solid var(--blue);border-radius:8px;padding:9px 14px">
+          <strong>線上申請（都審服務平台）</strong>
+          <span style="font-size:12px;color:var(--gray4);margin-left:8px">gis.udd.gov.taipei ｜ 取得線上申辦日期</span>
+        </div>
+      </div>
+      <div style="margin-left:15px;border-left:2px dashed var(--gray3);height:10px"></div>
+
+      <!-- Step 2 -->
+      <div style="display:flex;align-items:center;gap:10px;margin-bottom:4px">
+        <div style="width:32px;height:32px;background:var(--blue);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:14px;flex-shrink:0">2</div>
+        <div style="flex:1;background:var(--amber2);border:1.5px solid var(--amber);border-radius:8px;padding:9px 14px">
+          <strong>⏰ 14個日曆天內 — 紙本掛號送件</strong>
+          <div style="font-size:12px;color:var(--amber);margin-top:3px">正本 1份 ＋ 副本 4份（一般審議）｜大稻埕案正本1份＋副本8份</div>
+        </div>
+      </div>
+      <div style="margin-left:15px;border-left:2px dashed var(--gray3);height:10px"></div>
+
+      <!-- Step 3 -->
+      <div style="display:flex;align-items:center;gap:10px;margin-bottom:4px">
+        <div style="width:32px;height:32px;background:var(--blue);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:14px;flex-shrink:0">3</div>
+        <div style="flex:1;background:var(--gray1);border:1.5px solid var(--border);border-radius:8px;padding:9px 14px">
+          <strong>承辦人查核書圖完整性</strong>
+          <div style="font-size:12px;color:var(--gray4);margin-top:3px">對照「收件查核表」：申請書用印、報告書份數、交評報告書（車位>150輛）等</div>
+        </div>
+      </div>
+      <div style="margin-left:15px;border-left:2px dashed var(--gray3);height:10px"></div>
+
+      <!-- Step 4 -->
+      <div style="display:flex;align-items:center;gap:10px;margin-bottom:4px">
+        <div style="width:32px;height:32px;background:var(--blue);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:14px;flex-shrink:0">4</div>
+        <div style="flex:1;background:var(--amber2);border:1.5px solid var(--amber);border-radius:8px;padding:9px 14px">
+          <strong>⏰ 圖說及法規檢討齊全正確後 → 承辦人通知繳費</strong>
+          <div style="font-size:12px;color:var(--amber);margin-top:3px">申設單位應於通知起 <strong>3天內</strong>完成繳費，逾期申請不予受理</div>
+        </div>
+      </div>
+      <div style="margin-left:15px;border-left:2px dashed var(--gray3);height:10px"></div>
+
+      <!-- Step 5 -->
+      <div style="display:flex;align-items:center;gap:10px;margin-bottom:4px">
+        <div style="width:32px;height:32px;background:var(--blue);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:14px;flex-shrink:0">5</div>
+        <div style="flex:1;background:var(--navy3);border:1.5px solid var(--blue);border-radius:8px;padding:9px 14px">
+          <strong>幹事會審查</strong>（召集各機關幹事意見）
+          <div style="font-size:12px;color:var(--gray4);margin-top:3px">工務局、消防局、交通局、環保局、文化局、大地處、建管處、都更處等</div>
+        </div>
+      </div>
+      <div style="margin-left:15px;border-left:2px dashed var(--gray3);height:10px"></div>
+
+      <!-- Step 6 - branching -->
+      <div style="display:flex;align-items:center;gap:10px;margin-bottom:4px">
+        <div style="width:32px;height:32px;background:var(--blue);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:14px;flex-shrink:0">6</div>
+        <div style="flex:1;display:flex;gap:8px;flex-wrap:wrap">
+          <div style="flex:1;min-width:120px;background:var(--red2);border:1.5px solid var(--red);border-radius:8px;padding:8px 12px;font-size:12.5px;font-weight:700;color:var(--red);text-align:center">一般 → 委員會</div>
+          <div style="flex:1;min-width:120px;background:var(--amber2);border:1.5px solid var(--amber);border-radius:8px;padding:8px 12px;font-size:12.5px;font-weight:700;color:var(--amber);text-align:center">專案 → 專案委員會</div>
+          <div style="flex:1;min-width:120px;background:var(--green2);border:1.5px solid var(--green);border-radius:8px;padding:8px 12px;font-size:12.5px;font-weight:700;color:var(--green);text-align:center">簡化 → 簡化委員會</div>
+          <div style="flex:1;min-width:120px;background:var(--gray2);border:1.5px solid var(--gray3);border-radius:8px;padding:8px 12px;font-size:12.5px;font-weight:700;color:var(--gray5);text-align:center">幹事會 → 備查</div>
+        </div>
+      </div>
+      <div style="margin-left:15px;border-left:2px dashed var(--gray3);height:10px"></div>
+
+      <!-- Step 7 -->
+      <div style="display:flex;align-items:center;gap:10px;margin-bottom:4px">
+        <div style="width:32px;height:32px;background:var(--blue);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:14px;flex-shrink:0">7</div>
+        <div style="flex:1;background:var(--amber2);border:1.5px solid var(--amber);border-radius:8px;padding:9px 14px">
+          <strong>⏰ 收受會議紀錄後 30 日內送府核定</strong>
+          <div style="font-size:12px;color:var(--amber);margin-top:3px">（退補正及函轉他局處另計14天）每階段最多展期1次，合計不超過90日</div>
+        </div>
+      </div>
+      <div style="margin-left:15px;border-left:2px dashed var(--gray3);height:10px"></div>
+
+      <!-- Step 8 -->
+      <div style="display:flex;align-items:center;gap:10px;margin-bottom:4px">
+        <div style="width:32px;height:32px;background:var(--green);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:14px;flex-shrink:0">8</div>
+        <div style="flex:1;background:var(--green2);border:1.5px solid var(--green);border-radius:8px;padding:9px 14px">
+          <strong>✅ 取得都審核定函</strong>
+          <div style="font-size:12px;color:var(--green);margin-top:3px">核定函效力：核定函日起 1 年內申請建造執照</div>
+        </div>
+      </div>
+      <div style="margin-left:15px;border-left:2px dashed var(--gray3);height:10px"></div>
+
+      <!-- Step 9 -->
+      <div style="display:flex;align-items:center;gap:10px">
+        <div style="width:32px;height:32px;background:var(--navy);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:14px;flex-shrink:0">9</div>
+        <div style="flex:1;background:var(--navy3);border:1.5px solid var(--navy2);border-radius:8px;padding:9px 14px">
+          <strong>申請建造執照</strong>
+          <div style="font-size:12px;color:var(--gray4);margin-top:3px">※都更案：事業計畫核定後2年內；危老重建：核准後180日內</div>
+        </div>
+      </div>
+
+    </div></div>
+  </div>
+
+  <div class="g2">
+    <div class="card">
+      <div class="card-ttl">📄 紙本掛件應備文件</div>
+      <ul>
+        <li>線上二維申請書（有效期內，正章用印）</li>
+        <li>都審報告書（正章用印）</li>
+        <li>委託書、切結書、資訊同意書（正章用印）</li>
+        <li>建築計畫資料表</li>
+        <li>汽車位 &gt;150輛 → 附<strong>交評報告書</strong></li>
+        <li>3D模型（新案/變更設計）：skp≤2018或ifc格式，正北方向，單位公尺</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="card-ttl">📋 報告書必備圖說</div>
+      <ul>
+        <li>敷地計畫 ／ 設計說明</li>
+        <li>建築物圖說（各層平面、立面、剖面）</li>
+        <li>景觀植栽計畫</li>
+        <li>建築物造型及色彩計畫</li>
+        <li>車行與交通動線規劃</li>
+        <li>消防救災空間及動線規劃</li>
+        <li>受保護樹木影響評估（如適用）</li>
+        <li>核定階段：R6-1~R6-4 公開圖說</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="al al-a">
+    <strong>⚠ 關鍵提醒：</strong>線上申辦日期起 <strong>14個日曆天內</strong> 須完成紙本掛號，逾期線上申請作廢，需重新申請。圖說及法規檢討齊全後，承辦人才會通知繳費，<strong>繳費通知後3天內</strong>需完成繳費。
+  </div>
+</section>
+
+<!-- ===== FEE ===== -->
+<section id="fee" class="sec">
+  <div class="sec-hdr">
+    <h2>💰 費用與時程規定</h2>
+    <p>審議規則第7條、收費辦法第3條</p>
+  </div>
+
+  <div class="card">
+    <div class="card-ttl"><span class="ct">收費基準</span>審議費一覽（112.12.29施行）</div>
+    <table>
+      <thead><tr><th>程序</th><th style="text-align:center">審議費</th><th>繳費時機</th></tr></thead>
+      <tbody>
+        <tr><td><span class="b b-r">一般審議程序</span></td><td style="text-align:center;font-size:18px;font-weight:800;color:var(--red)">$85,000</td><td rowspan="4" style="vertical-align:middle;font-size:13px;background:var(--amber2);color:var(--amber)"><strong>圖說及法規檢討齊全且正確後，由承辦人通知繳費<br><br>通知後 3 天內完成</strong></td></tr>
+        <tr><td><span class="b b-a">專案審議程序</span></td><td style="text-align:center;font-size:18px;font-weight:800;color:var(--amber)">$80,000</td></tr>
+        <tr><td><span class="b b-g">簡化審議程序</span></td><td style="text-align:center;font-size:18px;font-weight:800;color:var(--green)">$45,000</td></tr>
+        <tr><td><span class="b b-gray">幹事會審議程序</span></td><td style="text-align:center;font-size:18px;font-weight:800">$35,000</td></tr>
+        <tr><td>變更設計（與原案差異不大）</td><td style="text-align:center;font-weight:700">$10,000</td><td>委員會認定與原核定案無變更或幅度不大</td></tr>
+        <tr><td>先行審查（§4申請）</td><td style="text-align:center;font-weight:700">$45,000</td><td></td></tr>
+      </tbody>
+    </table>
+    <div class="al al-b" style="margin-top:12px;margin-bottom:0">
+      <strong>注意：</strong>繳納後除溢繳或誤繳外，不得以任何理由退費或保留。
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-ttl"><span class="ct">時程規定</span>各階段送審時限（審議規則§7）</div>
+    <table>
+      <thead><tr><th>時程事項</th><th style="width:22%">時限</th><th>備註</th></tr></thead>
+      <tbody>
+        <tr><td>線上申請 → 紙本掛件</td><td><strong>14 日曆天</strong></td><td>逾期線上申請作廢</td></tr>
+        <tr><td>收受幹事會紀錄 → 委員會（一般）</td><td><strong>30 天</strong></td><td>得申請展期</td></tr>
+        <tr><td>收受委員會紀錄 → 送府核定（一般）</td><td><strong>30 天</strong></td><td>得申請展期</td></tr>
+        <tr><td>收受紀錄 → 送府核定（專案）</td><td><strong>30 天</strong></td><td>得申請展期</td></tr>
+        <tr><td>收受紀錄 → 送府核定（簡化）</td><td><strong>30 天</strong></td><td>得申請展期</td></tr>
+        <tr><td>收受紀錄 → 送府核定（幹事會）</td><td><strong>30 天</strong></td><td>得申請展期</td></tr>
+        <tr><td>退補正 ／ 函轉他局處</td><td><strong>14 天</strong></td><td>另計，不計入30天時限</td></tr>
+        <tr><td>各階段展期（每階段最多1次）</td><td><strong>合計≤90 天</strong></td><td>得敘明理由申請</td></tr>
+        <tr><td>府核定後 → 申請建造執照（新案）</td><td><strong>1 年</strong></td><td>逾期核定函失效</td></tr>
+        <tr><td>都更案 → 建照（事業計畫核定後）</td><td><strong>2 年</strong></td><td>或權核定後1年（分別報核時）</td></tr>
+        <tr><td>危老重建 → 建照</td><td><strong>180 天</strong></td><td>自核准危老重建次日起算</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- ===== CHANGE ===== -->
+<section id="change" class="sec">
+  <div class="sec-hdr">
+    <h2>✏️ 變更設計</h2>
+    <p>核定後需修改設計時，應判斷是否需重新辦理都審程序</p>
+  </div>
+
+  <div class="card">
+    <div class="card-ttl"><span class="ct">判斷流程</span>是否需重新辦理都審？</div>
+
+    <!-- DECISION TREE -->
+    <div style="background:var(--gray1);border-radius:10px;padding:18px;margin-top:4px">
+
+      <!-- Root -->
+      <div style="text-align:center;margin-bottom:12px">
+        <div style="display:inline-block;background:var(--navy);color:#fff;border-radius:8px;padding:10px 24px;font-weight:700;font-size:14px">已核定之都審案 ── 需要修改設計</div>
+      </div>
+
+      <div style="display:flex;justify-content:center;margin-bottom:4px">
+        <div style="border-left:2px solid var(--gray3);height:20px"></div>
+      </div>
+
+      <!-- Diamond question -->
+      <div style="text-align:center;margin-bottom:12px">
+        <div style="display:inline-block;background:#fff;border:2px solid var(--blue);border-radius:8px;padding:10px 20px;font-size:13px;font-weight:600;color:var(--navy2)">
+          符合以下任一免辦理條件？<br>
+          <span style="font-size:11.5px;font-weight:400;color:var(--gray4)">且不違反土管自治條例、都計規定及原決議</span>
+        </div>
+      </div>
+
+      <!-- Two branches -->
+      <div style="display:flex;gap:16px;align-items:flex-start">
+        <!-- YES -->
+        <div style="flex:1;text-align:center">
+          <div style="font-size:13px;font-weight:700;color:var(--green);margin-bottom:6px">✅ 是（符合免辦條件）</div>
+          <div style="border-left:2px solid var(--green);height:16px;margin:0 auto;width:2px"></div>
+          <div style="background:var(--green2);border:2px solid var(--green);border-radius:8px;padding:12px;font-size:13px;font-weight:700;color:var(--green);text-align:center;margin-top:0">
+            免申請都審變更設計<br>
+            <span style="font-size:11.5px;font-weight:400;color:var(--green)">直接向建管處辦理</span>
+          </div>
+        </div>
+
+        <!-- NO -->
+        <div style="flex:1;text-align:center">
+          <div style="font-size:13px;font-weight:700;color:var(--red);margin-bottom:6px">❌ 否（不符合免辦）</div>
+          <div style="border-left:2px solid var(--red);height:16px;margin:0 auto;width:2px"></div>
+          <div style="background:var(--red2);border:2px solid var(--red);border-radius:8px;padding:12px;font-size:13px;font-weight:700;color:var(--red);text-align:center">
+            需重新申請都審<br>
+            <span style="font-size:11.5px;font-weight:400;color:var(--red)">費用依對應程序收費（$10,000~$85,000）</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-ttl"><span class="ct">審議規則§8</span>五款免辦理變更設計條件</div>
+    <table>
+      <thead><tr><th style="width:5%">款</th><th>免辦理情形</th><th style="width:35%">範例說明</th></tr></thead>
+      <tbody>
+        <tr>
+          <td>一</td>
+          <td>調整項目符合「<strong>免辦理變更設計項目一覽表</strong>」（110.05.11），或不影響原核定方案</td>
+          <td>詳見都審服務平台下載一覽表</td>
+        </tr>
+        <tr>
+          <td>二</td>
+          <td><strong>用途變更</strong>不影響原核定方案及停車位之配置</td>
+          <td>樓層用途局部調整，停車位數量不變</td>
+        </tr>
+        <tr>
+          <td>三</td>
+          <td>附屬設施之變更<strong>未影響景觀</strong></td>
+          <td>機電設備位置小幅調整，外觀未改變</td>
+        </tr>
+        <tr>
+          <td>四</td>
+          <td>綠化設施係<strong>同一種別植栽種類</strong>變更（樹種或草種）</td>
+          <td>將某品種喬木換為另一品種喬木</td>
+        </tr>
+        <tr>
+          <td>五</td>
+          <td>經指定留設之開放空間，<strong>未變更可視性及可及性</strong>功能</td>
+          <td>開放空間鋪面材料變更，位置不變</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="al al-b" style="margin-top:12px;margin-bottom:0">
+      <strong>另注意：</strong>結構形式調整、基礎型式、工程經費調整等<strong>不涉及都審審查範疇</strong>之變更，免予送審（直接向建管處辦理）。
+    </div>
+  </div>
+
+  <div class="al al-a">
+    <strong>⏰ 時程：</strong>變更設計案之作業程序，準用審議規則第7條之送審時限規定。費用：若委員會認定與原核定案<strong>無變更或幅度不大</strong>，僅收 <strong>$10,000</strong>；否則依對應審議程序全額收費。
+  </div>
+</section>
+
+<!-- ===== MUST ===== -->
+<section id="must" class="sec">
+  <div class="sec-hdr">
+    <h2>⚠️ 必遵守規範（審議注意事項）</h2>
+    <p>這些是申設單位應自行確認符合的規劃設計標準，與「審議參考範例」（原則性）不同，<strong>必須遵守</strong></p>
+  </div>
+
+  <div class="al al-r">
+    <strong>⚠ 重要說明：</strong>審議注意事項為<strong>強制規範</strong>，申設單位應於送件前自行逐條檢核，委員會審議時將直接要求符合，無法以「基地條件限制」為由豁免。
+  </div>
+
+  <div class="card">
+    <div class="card-ttl"><span class="ct">一</span>都市設計規劃及分析說明</div>
+    <ul>
+      <li>以<strong>都市尺度、街廓尺度及人行尺度</strong>進行周邊交通、量體、開放空間等面向之分析</li>
+      <li>充分考量基地周邊既有紋理（現有巷弄、周邊建物立面語彙、顏色、量體高度），並納入設計準則規範</li>
+      <li>地面層開放空間確保區域使用用途、騎樓空間、人車動線及外部空間之延續性，配合加強景觀植栽整體規劃</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-ttl"><span class="ct">二</span>公共空間及綠化</div>
+    <div class="g2">
+      <ul>
+        <li>地面層設備及通風設施應<strong>避開主要開放空間及人行動線</strong>，與建築物主體整併</li>
+        <li>開放空間人行鋪面材質均應符合<strong>防滑標準</strong>（C.S.R. ≥ 0.75）</li>
+        <li>現況樹型良好之喬木或樹群，<strong>原地保留</strong>或於原基地內移植</li>
+        <li>非開挖區以栽植喬木取代人工設施物</li>
+      </ul>
+      <ul>
+        <li>開放空間花臺及座椅高度<strong>不超過 45 公分</strong></li>
+        <li>圍牆高度不高於 <strong>2 公尺</strong>；臨道路側基座不超過45公分、<strong>透空率 ≥ 70%</strong></li>
+        <li>開放空間應<strong>避免使用投樹燈</strong></li>
+        <li>設置階梯：級高 ≤ <strong>15公分</strong>、級深 ≥ <strong>28公分</strong></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-ttl"><span class="ct">三</span>建築設計規劃</div>
+    <ul>
+      <li>服務性陽台及空調設備設於臨道路側，應有<strong>遮蔽美化設施</strong></li>
+      <li><span class="b b-new">NEW 113.07</span> 立面材料<strong>建議避免使用燒面石材</strong>（燒面大理石強度僅為一般石材 1/2）</li>
+      <li>商業區（含特定商業區）及工業區，<strong>不設置圍牆</strong>或高度 45公分以上綠籬</li>
+      <li>都市計畫不得作住宅區域：申請人切結不得作住宅使用，納入建照記載及地政登記注意事項</li>
+      <li>廣告物：LED廣告物播放時影像亮度<strong>避免炫光</strong>；帷幕牆內側避免設置閃光型廣告物</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-ttl"><span class="ct">四</span>交通及停車空間</div>
+    <ul>
+      <li>YouBike 優先設置於地面層開放空間；自身使用之自行車位留設 <strong>2公尺</strong>淨寬操作空間</li>
+      <li>機車車道淨寬 ≥ <strong>1.5公尺</strong>，坡道斜率 &lt; 1/8 並鋪設防滑材料</li>
+      <li><span class="b b-new">NEW</span> 各層機車停車位應<strong>集中設置</strong>（避免散佈各層造成汽機車交織）</li>
+      <li>車道出入口地坪與相鄰人行空間<strong>順平</strong>，鋪面系統避免使用車道磚且延續人行道鋪面型式</li>
+      <li>開發基地鄰接公車站者，應於退縮空間內預留<strong>候車亭位置</strong></li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-ttl"><span class="ct">五</span>古蹟及舊城區街道周邊</div>
+    <ul>
+      <li>面向古蹟側立面：量體輪廓簡潔；避免工作陽台及附掛式設備；避免閃爍式燈光</li>
+      <li>鄰近古蹟量體分析：以人的視角繪製量體分析圖及古蹟周邊天際線影響模擬圖</li>
+      <li>舊城區街道（萬華廣州街、貴陽街、大同哈密街、中正衡陽路、博愛路等）：設計呼應都市紋理</li>
+      <li>國定古蹟總統府後方：<strong>高度不超過總統府山型天際線</strong>（應先經文化部確認）</li>
+    </ul>
+  </div>
+
+  <div class="g2">
+    <div class="card">
+      <div class="card-ttl"><span class="ct">六</span>公共工程</div>
+      <h4>校園開發案</h4>
+      <ul>
+        <li>提出<strong>分期分區發展計畫</strong>（含既有建築面積、容積、車位、預計開發量、人車動線）</li>
+        <li>新建建築地坪高程避免抬高，友善建物與都市外部空間界面</li>
+        <li>家長接送區於基地<strong>內化</strong>處理，避免影響外部交通</li>
+      </ul>
+      <h4>醫院</h4>
+      <ul><li>急診區外部空間含 <strong>4公尺緊急救護動線</strong>及4公尺淨寬以上作業空間</li></ul>
+      <h4>社會住宅 <span class="b b-new">NEW 113.07</span></h4>
+      <ul><li>優先試辦地面層預為規劃<strong>臨停上下車空間</strong>（考量高齡化趨勢）</li></ul>
+    </div>
+    <div class="card">
+      <div class="card-ttl"><span class="ct">七</span>山坡地</div>
+      <ul>
+        <li>檢附<a href="http://swc.taipei/swcinfo/" target="_blank">臺北市山坡地保育利用資訊查詢系統</a>查詢結果或大地處函文，確認是否屬山坡地</li>
+        <li>位於山坡地者，檢附<strong>水土保持規劃書</strong>（以30頁內為原則），併入都審報告書附錄</li>
+        <li>坵塊分析：以88年公告之實測地形圖及技師簽證現況測量圖進行，方格尺度及格位位置均應相同</li>
+        <li>開發案清楚標示基地內、外高程及整地前後說明，於剖面圖說套繪現況地形</li>
+        <li>山坡地擋土牆<strong>避免與建物外牆共構</strong></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ===== REF ===== -->
+<section id="ref" class="sec">
+  <div class="sec-hdr">
+    <h2>📐 設計參考原則（審議參考範例）</h2>
+    <p>供開發單位辦理都市設計規劃設計之參考，屬原則性規定。若因基地條件限制且經委員會通過，得不受限制。</p>
+  </div>
+
+  <div class="al al-g">
+    <strong>📌 113年7月26日確認版，適用114年度審議。</strong>都審（變更）掛件日之版本為準。
+  </div>
+
+  <!-- Visual quick reference -->
+  <div class="card">
+    <div class="card-ttl"><span class="ct">快速視覺索引</span>七大設計面向</div>
+    <div class="dicons">
+      <div class="dicon"><div class="di">🏘</div><h5>基地周邊景觀</h5><p>提出模擬及設計建議，維整體都市景觀完整性</p></div>
+      <div class="dicon"><div class="di">🏪</div><h5>騎樓與商業</h5><p>地面層沿街面優先商業使用；騎樓柱減少裝飾</p></div>
+      <div class="dicon"><div class="di">🌳</div><h5>公共空間綠化</h5><p>退縮1.5m人行空間；喬木覆土1.5m；樹間距≤8m</p></div>
+      <div class="dicon"><div class="di">🏢</div><h5>建築設計</h5><p>60m以上做風評估；玻璃反射率≤16%</p></div>
+      <div class="dicon"><div class="di">🚗</div><h5>交通停車</h5><p>集中地下層；車道出入口整併1處；次要道路側</p></div>
+      <div class="dicon"><div class="di">🔄</div><h5>容積移轉補償</h5><p>商業區沿街面70%商業使用；4m帶狀開放空間</p></div>
+      <div class="dicon"><div class="di">📍</div><h5>地區性規範</h5><p>士北科、南港綠廊、奇岩等特定地區另有規定</p></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-ttl"><span class="ct">建築設計</span>重要數值一覽</div>
+    <div class="g2">
+      <table>
+        <thead><tr><th>項目</th><th>建議標準</th></tr></thead>
+        <tbody>
+          <tr><td>建築高度超過此值應做風評估</td><td><strong>60 公尺</strong></td></tr>
+          <tr><td>屋頂裝飾性構造物高度上限</td><td><strong>6 公尺</strong></td></tr>
+          <tr><td>玻璃帷幕反射率上限</td><td><strong>16%</strong></td></tr>
+          <tr><td>其餘玻璃材質反射率上限</td><td><strong>20%</strong></td></tr>
+          <tr><td>建築能效等級（新建建築物）</td><td><strong>1+ 級（近零碳）</strong></td></tr>
+        </tbody>
+      </table>
+      <table>
+        <thead><tr><th>地下層開挖率（建議上限）</th><th></th></tr></thead>
+        <tbody>
+          <tr><td>第一、二、三、四種商業區</td><td><strong>80%</strong></td></tr>
+          <tr><td>第三、四種住宅區 ／ 工業區</td><td><strong>70%</strong></td></tr>
+          <tr><td>第一、二種住宅區</td><td><strong>50%</strong></td></tr>
+          <tr><td>保護區、農業區、公共設施用地</td><td><strong>法定建蔽率+10%</strong></td></tr>
+          <tr><td>其他使用分區</td><td><strong>60%</strong></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-ttl"><span class="ct">交通停車</span>停車設計參考數值</div>
+    <ul>
+      <li>車道出入口於指定退縮人行空間後留設 <strong>4.5公尺以上</strong>緩衝空間（基地條件限制者至少2公尺）</li>
+      <li>旅館、百貨、醫院等人群聚集場所，於基地內規劃<strong>接駁及計程車臨停上下客</strong>空間</li>
+      <li>臨道路側地面層入口<strong>避免設置禮儀性迴車道</strong></li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-ttl"><span class="ct">容積移轉</span>公共設施容積移轉補償措施</div>
+    <ul>
+      <li>容積移入接受基地以<strong>專章</strong>分析容積移入對環境之影響及補償措施</li>
+      <li>接受基地地下開挖層數<strong>不得超過6層</strong>，停車位不得以機械車位設置</li>
+      <li>商業區接受基地：至少1、2層作商業使用，地面層<strong>沿街面長度70%</strong>應配置商業空間</li>
+      <li>非留設騎樓者，臨道路側至少留設 <strong>4公尺帶狀式開放空間</strong>，喬木綠覆面積達80%</li>
+      <li>基地面積達2,000㎡以上者，臨道路側栽植<strong>雙排以上喬木</strong>，或增設廣場式開放空間</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-ttl"><span class="ct">地區性</span>特定地區規範摘要</div>
+    <table>
+      <thead><tr><th>地區</th><th>重點規範</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><strong>北投士林科技園區</strong></td>
+          <td>淨零排放示範區；增加容積案應檢討建築能效等級、溫室氣體增量抵換、再生能源電力及憑證</td>
+        </tr>
+        <tr>
+          <td><strong>南港綠廊</strong>（市民大道六、七、八段）</td>
+          <td>底層部高度≤20m；住宅塔樓對角線≤45m，商業≤70m；車道口以次要道路為原則</td>
+        </tr>
+        <tr>
+          <td><strong>信義計畫區、大彎段</strong></td>
+          <td>臨5公尺人行步道案：圍牆退縮1公尺，退縮部分栽植遮蔭喬木</td>
+        </tr>
+        <tr>
+          <td><strong>奇岩新社區</strong>（容積移轉）</td>
+          <td>容積移入量依級距（≤10%/~20%/~30%/＞30%）選擇對應綠建築標章及環境貢獻項目</td>
+        </tr>
+        <tr>
+          <td><strong>大稻埕歷史風貌特定專用區</strong></td>
+          <td>規劃設計應體現並尊重地區歷史脈絡，須附歷史調查及分析；送件份數 9 份</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- ===== COMMITTEE ===== -->
+<section id="committee" class="sec">
+  <div class="sec-hdr">
+    <h2>👥 委員會簡介</h2>
+    <p>臺北市都市設計及土地使用開發許可審議委員會｜府外委員任期：113.07.01 ~ 114.06.30</p>
+  </div>
+
+  <div class="g4">
+    <div class="stat"><div class="stat-n">23</div><div class="stat-l">委員會委員總人數</div><div class="stat-u">含主委、2副主委</div></div>
+    <div class="stat"><div class="stat-n">14</div><div class="stat-l">府外委員</div><div class="stat-u">任期至114.06.30</div></div>
+    <div class="stat"><div class="stat-n">74%</div><div class="stat-l">男性委員比例</div><div class="stat-u">（17男 ／ 6女）</div></div>
+    <div class="stat"><div class="stat-n">26%</div><div class="stat-l">女性委員比例</div><div class="stat-u">含主委在內</div></div>
+  </div>
+
+  <div class="g2" style="margin-top:14px">
+    <div class="card">
+      <div class="card-ttl"><span class="ct">府外委員</span>14位專業類別</div>
+      <table>
+        <thead><tr><th>專業類別</th><th>人數</th></tr></thead>
+        <tbody>
+          <tr><td>都市計畫</td><td>1人</td></tr>
+          <tr><td>都市設計</td><td>3人</td></tr>
+          <tr><td>建築設計</td><td>3人</td></tr>
+          <tr><td>造園及景觀設計</td><td>1人</td></tr>
+          <tr><td>地質大地工程</td><td>1人</td></tr>
+          <tr><td>交通規劃</td><td>1人</td></tr>
+          <tr><td>文化藝術</td><td>1人</td></tr>
+          <tr><td>公益團體代表</td><td>1人</td></tr>
+          <tr><td>建築開發公會代表</td><td>1人</td></tr>
+          <tr><td>建築師公會代表</td><td>1人</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="card">
+      <div class="card-ttl"><span class="ct">府內委員</span>各機關代表</div>
+      <ul>
+        <li>都市發展局局長（主任委員）</li>
+        <li>都市發展局副局長 ×2（副主任委員）</li>
+        <li>工務局副局長</li>
+        <li>消防局副局長</li>
+        <li>交通局副局長</li>
+        <li>環境保護局副局長</li>
+        <li>工務局大地工程處副處長</li>
+        <li>建築管理工程處副處長</li>
+      </ul>
+      <div class="al al-b" style="margin-top:10px;margin-bottom:0">委員任期一年，府外委員得續聘，連任以二次為限；連續聘任滿三年應間隔三年始得再聘。</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-ttl"><span class="ct">執行秘書 ／ 幹事</span>各機關聯絡單位</div>
+    <table>
+      <thead><tr><th>角色</th><th>機關</th><th>職稱</th><th>電話</th></tr></thead>
+      <tbody>
+        <tr><td>執行秘書</td><td>都市發展局</td><td>專門委員</td><td>#8251</td></tr>
+        <tr><td>執行秘書</td><td>都市發展局</td><td>副總工程司</td><td>#8253</td></tr>
+        <tr><td>幹事</td><td>建管處</td><td>副總工程司</td><td>#8346</td></tr>
+        <tr><td>幹事</td><td>公園路燈處</td><td>副總工程司</td><td>(02)2381-5132 #212</td></tr>
+        <tr><td>幹事</td><td>大地工程處</td><td>專門委員</td><td>(02)2759-3001 #3070</td></tr>
+        <tr><td>幹事</td><td>交通局</td><td>技正</td><td>#1503</td></tr>
+        <tr><td>幹事</td><td>環境保護局</td><td>簡任技正</td><td>#1124</td></tr>
+        <tr><td>幹事</td><td>消防局</td><td>科長</td><td>(02)2729-7668 #6301</td></tr>
+        <tr><td>幹事</td><td>新建工程處</td><td>副總工程司</td><td>(02)27595560 #7938</td></tr>
+        <tr><td>幹事</td><td>文化局</td><td>專員</td><td>#3631</td></tr>
+        <tr><td>幹事</td><td>都發局都市設計科</td><td>科長</td><td>#8275</td></tr>
+        <tr><td>幹事</td><td>都更處</td><td>主秘</td><td>(02)2781-5696 #3003</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- ===== GREENLAW ===== -->
+<section id="greenlaw" class="sec">
+  <div class="sec-hdr">
+    <h2>🌿 臺北市新建建築物綠化實施規則</h2>
+    <p>114年7月31日修正發布，自 <strong>115年1月1日</strong>起施行（全文17條）</p>
+  </div>
+
+  <div class="al al-g">
+    <strong>🔗 法規原文：</strong><a href="https://laws.gov.taipei/Law/LawSearch/LawArticleContent/FL080927" target="_blank">臺北市法規查詢系統 — 臺北市新建建築物綠化實施規則（FL080927）</a><br>
+    <strong>沿革：</strong>中華民國114年7月31日府法綜字第1143034143號令修正發布全文17條；並自115年1月1日施行。
+  </div>
+
+  <div class="card">
+    <div class="card-ttl"><span class="ct">新增概念（115年版）</span>綠容率（§3、§5）</div>
+    <div class="g2">
+      <div>
+        <h4>定義</h4>
+        <ul>
+          <li><strong>等效綠覆面積</strong>：各植栽綠覆面積 × 降溫係數</li>
+          <li><strong>綠容率</strong>：等效綠覆面積總和 ÷ 建築基地面積</li>
+        </ul>
+        <h4>降溫係數</h4>
+        <table style="margin-top:6px">
+          <thead><tr><th>植栽種類</th><th>降溫係數</th></tr></thead>
+          <tbody>
+            <tr><td>高遮蔭喬木</td><td><strong>3.0</strong></td></tr>
+            <tr><td>低遮蔭喬木</td><td><strong>2.0</strong></td></tr>
+            <tr><td>灌木</td><td><strong>1.2</strong></td></tr>
+            <tr><td>其他植栽種類</td><td><strong>1.0</strong></td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div>
+        <h4>計算公式</h4>
+        <div style="background:var(--gray1);border:1.5px solid var(--border);border-radius:8px;padding:12px;font-size:12.5px;line-height:1.8">
+          綠容率 = <br>
+          [喬木面積(㎡)×喬木降溫係數<br>
+          ＋灌木面積(㎡)×1.2<br>
+          ＋其他植栽面積(㎡)×1.0]<br>
+          ÷ 建築基地面積(㎡)
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-ttl"><span class="ct">§4、§5</span>五類建築基地分類與規定（115年1月1日起）</div>
+    <table>
+      <thead>
+        <tr><th>類別</th><th>適用條件</th><th>綠覆率</th><th>綠容率</th><th>固碳當量基準（kg/㎡·年）</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span class="b b-r">第一類</span></td>
+          <td>新開闢一公頃以上公園用地之建築基地</td>
+          <td><strong>≥ 90%</strong></td><td><strong>≥ 2.0</strong></td><td>0.99</td>
+        </tr>
+        <tr>
+          <td><span class="b b-a">第二類</span></td>
+          <td>完整街廓；公有建築物及各級學校；基地≥1,000㎡且實設容積較法定容積增加</td>
+          <td><strong>≥ 80%</strong></td><td><strong>≥ 1.9</strong></td><td>0.83</td>
+        </tr>
+        <tr>
+          <td><span class="b b-b">第三類</span></td>
+          <td>基地≥1,000㎡，或500㎡~1,000㎡且容積增加；第一類以外之公園用地、既有公有建築物或學校</td>
+          <td><strong>≥ 70%</strong></td><td><strong>≥ 1.8</strong></td><td>0.83</td>
+        </tr>
+        <tr>
+          <td><span class="b b-g">第四類</span></td>
+          <td>基地500㎡~1,000㎡；住宅區≥300㎡，或非住宅區300~500㎡且容積增加</td>
+          <td><strong>≥ 60%</strong></td><td><strong>≥ 1.6</strong></td><td>0.66</td>
+        </tr>
+        <tr>
+          <td><span class="b b-gray">第五類</span></td>
+          <td>前四類以外之建築基地</td>
+          <td><strong>≥ 50%</strong></td><td><strong>≥ 1.4</strong></td><td>0.66</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="al al-a" style="margin-top:12px;margin-bottom:0">
+      <strong>注意：</strong>基地跨越二個以上使用分區，以所占面積較大之使用分區認定類別。同時符合多類時，以序號在前者認定。
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-ttl"><span class="ct">§7</span>法定空地植栽重點規定（115年版）</div>
+    <div class="g2">
+      <div>
+        <h4>喬木覆土深度</h4>
+        <ul>
+          <li>喬木、棕櫚類：<strong>150公分以上</strong>（120~150cm：綠覆面積以80%計；100~120cm：以60%計）</li>
+          <li>灌木類：<strong>60公分以上</strong></li>
+          <li>藤蔓、草花、地被、草皮：<strong>30公分以上</strong></li>
+        </ul>
+      </div>
+      <div>
+        <h4>退縮帶狀開放空間（臨道路側≥3.64m）</h4>
+        <ul>
+          <li>喬木綠覆面積應占開放空間面積 <strong>≥ 80%</strong></li>
+          <li>臨道路側1.5m範圍內種植行道樹：覆土深度<strong>2公尺</strong>，株距<strong>4~6公尺</strong>，分枝高度距地面<strong>2.5公尺</strong>以上</li>
+          <li>單獨植栽穴面積：大喬木<strong>≥4㎡</strong>、中喬木<strong>≥2.5㎡</strong>、小喬木<strong>≥1.5㎡</strong></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="g2">
+    <div class="card">
+      <div class="card-ttl"><span class="ct">§9</span>屋頂平台綠化</div>
+      <ul>
+        <li>屋頂平台綠覆面積應達屋頂平台面積之 <strong>50%</strong>（法令另有規定者除外）</li>
+        <li>灌木類綠覆面積應達屋頂平台綠覆面積 <strong>30%</strong> 以上</li>
+        <li>因綠化增加之必要設備層或植栽覆土，高度在 <strong>80公分以下</strong>，不計入建築物高度</li>
+        <li>緊鄰女兒牆設置綠化設施者，覆土完成面女兒牆高度不足1.5m部分應設置<strong>透空欄杆</strong></li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="card-ttl"><span class="ct">§12</span>透水鋪面規定</div>
+      <ul>
+        <li>各類建築基地內車道、人行步道或廣場等鋪面，應設置 <strong>≥ 50%</strong> 面積之透水性材料</li>
+        <li>並與臨接道路之人行道<strong>順平</strong></li>
+        <li>透水鋪面下方覆土深度至少應有 <strong>30公分</strong>之砂石級配層</li>
+      </ul>
+      <div class="al al-b" style="margin-top:10px;margin-bottom:0">
+        建造執照申請時須附：植栽配置平面圖（比例≥1/100）、植栽剖面詳圖（比例≥1/50）、<strong>綠容率檢討表、綠覆率檢討表、固碳當量檢討表</strong>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== LINKS ===== -->
+<section id="links" class="sec">
+  <div class="sec-hdr">
+    <h2>🔗 常用網站資源</h2>
+    <p>都審申請作業常用網站，依使用頻率排序</p>
+  </div>
+
+  <div class="card">
+    <table>
+      <thead>
+        <tr><th>#</th><th>網站名稱</th><th>主要用途</th><th style="width:8%">常用度</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td><strong><a href="https://gis.udd.gov.taipei/" target="_blank">都審服務平台</a></strong><br><span style="font-size:11.5px;color:var(--gray4)">gis.udd.gov.taipei</span></td>
+          <td>都審相關規範、開會通知單、會議紀錄、<strong>線上申請都審程序</strong></td>
+          <td style="text-align:center;color:#D97706">★★★★★</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td><strong><a href="https://bim.udd.gov.taipei/UDDPlanMap/?recode=1" target="_blank">臺北市都市開發審議地圖</a></strong><br><span style="font-size:11.5px;color:var(--gray4)">bim.udd.gov.taipei/UDDPlanMap</span></td>
+          <td>土地分區、建照號碼、<strong>都審地區</strong>、都更地區、山坡地、山限區查詢</td>
+          <td style="text-align:center;color:#D97706">★★★★★</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td><strong><a href="https://webgis.udd.gov.taipei/upis_v2/" target="_blank">都市計畫整合查詢系統</a></strong><br><span style="font-size:11.5px;color:var(--gray4)">webgis.udd.gov.taipei/upis_v2</span></td>
+          <td>都計通檢、細計查詢</td>
+          <td style="text-align:center;color:#D97706">★★★★½</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td><strong><a href="https://bim.udd.gov.taipei/" target="_blank">無紙化雲端服務平台</a></strong><br><span style="font-size:11.5px;color:var(--gray4)">bim.udd.gov.taipei</span></td>
+          <td>近期會議之都更及都審報告書閱覽</td>
+          <td style="text-align:center;color:#D97706">★★★★</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td><strong><a href="https://img2.gov.taipei/F100/F100.aspx" target="_blank">執照存根影像查詢系統</a></strong><br><span style="font-size:11.5px;color:var(--gray4)">img2.gov.taipei/F100</span></td>
+          <td>查執照、使照；用執照回查都審核定文號</td>
+          <td style="text-align:center;color:#D97706">★★★</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td><strong><a href="https://www.historygis.udd.gov.taipei/urban/" target="_blank">歷史圖資展示系統</a></strong><br><span style="font-size:11.5px;color:var(--gray4)">historygis.udd.gov.taipei/urban</span></td>
+          <td>歷年航照圖（比Google Maps更詳細）</td>
+          <td style="text-align:center;color:#D97706">★★★</td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td><strong><a href="https://laws.gov.taipei/Law/LawSearch/LawArticleContent/FL080927" target="_blank">綠化實施規則（法規全文）</a></strong><br><span style="font-size:11.5px;color:var(--gray4)">laws.gov.taipei ｜ FL080927</span></td>
+          <td>臺北市新建建築物綠化實施規則（115年1月1日施行）</td>
+          <td style="text-align:center;color:#D97706">★★★★</td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td><strong><a href="http://swc.taipei/swcinfo/" target="_blank">山坡地保育利用資訊查詢系統</a></strong><br><span style="font-size:11.5px;color:var(--gray4)">swc.taipei/swcinfo</span></td>
+          <td>查詢基地是否屬公告山坡地</td>
+          <td style="text-align:center;color:#D97706">★★★</td>
+        </tr>
+        <tr>
+          <td>9</td>
+          <td><strong><a href="https://cloud.land.gov.taipei/" target="_blank">臺北地政雲</a></strong><br><span style="font-size:11.5px;color:var(--gray4)">cloud.land.gov.taipei</span></td>
+          <td>土地使用權人查詢</td>
+          <td style="text-align:center;color:#D97706">★★½</td>
+        </tr>
+        <tr>
+          <td>10</td>
+          <td><strong><a href="https://law.moj.gov.tw/" target="_blank">全國法規資料庫</a></strong><br><span style="font-size:11.5px;color:var(--gray4)">law.moj.gov.tw</span></td>
+          <td>各種中央法規查詢</td>
+          <td style="text-align:center;color:#D97706">★★★★</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+</main>
+
+<script>
+function go(id){
+  document.querySelectorAll('.sec').forEach(s=>s.classList.remove('on'));
+  document.querySelectorAll('.sb-link').forEach(a=>a.classList.remove('active'));
+  const s=document.getElementById(id);
+  if(s)s.classList.add('on');
+  document.querySelectorAll('.sb-link').forEach(a=>{
+    if(a.getAttribute('onclick')===`go('${id}')`)a.classList.add('active');
+  });
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+</script>
+</body>
+</html>
